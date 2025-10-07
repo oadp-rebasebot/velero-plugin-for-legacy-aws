@@ -11,3 +11,9 @@ RUN mkdir /plugins
 COPY --from=builder /workspace/bin/velero-plugin-for-aws /plugins/
 USER nobody:nogroup
 ENTRYPOINT ["/bin/bash", "-c", "cp /plugins/* /target/."]
+
+LABEL description="OpenShift API for Data Protection - Velero Plugin for Legacy AWS"
+LABEL io.k8s.description="OpenShift API for Data Protection - Velero Plugin for Legacy AWS"
+LABEL io.k8s.display-name="OADP Velero Plugin for Legacy AWS"
+LABEL io.openshift.tags="migration"
+LABEL summary="OpenShift API for Data Protection - Velero Plugin for Legacy AWS"

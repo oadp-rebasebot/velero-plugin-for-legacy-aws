@@ -8,7 +8,7 @@ require (
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/pflag v1.0.10
 	github.com/stretchr/testify v1.11.1
-	github.com/vmware-tanzu/velero v1.18.3-rc.1
+	github.com/vmware-tanzu/velero v1.18.3
 	k8s.io/api v0.33.12
 	k8s.io/apimachinery v0.33.12
 )
@@ -91,6 +91,6 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace github.com/vmware-tanzu/velero => github.com/openshift/velero v0.10.2-0.20260901204729-2561b5f76121
+replace github.com/vmware-tanzu/velero => github.com/openshift/velero v0.10.2-0.20260904060022-e81ee90062e6
 
 exclude github.com/kcp-dev/kcp/sdk v0.0.0-00010101000000-000000000000
